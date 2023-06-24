@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>Pizza Shop Website</title>
+   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+<!-- Header Section -->
+
+<header class="header">
+
+   <section class="flex">
+
+      <div style="display: inline-flex; ">
+         <img src="images/utensils-solid.svg"  width="40px" height="30px"  alt="">
+         <a href="#home" class="logo">CrispKitchen.</a>
+      </div>
+      
+
+      <nav class="navbar">
+         <a href="#home">Home</a>
+         <a href="#about">About</a>
+         <a href="#menu">Menu</a>
+         <a href="#order">Order</a>
+         <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="icons">
+         <div id="menu-btn" class="fa-solid fa-bars"></div>
+         <div id="user-btn" class="fa-solid fa-user"></div>
+         <div id="order-btn" class="fa-solid fa-box"></div>
+         <div id="cart-btn" class="fa-solid fa-shopping-cart"></div>
+      </div>
+
+   </section>
+
+</header>
+
+<!-- Header Section End -->
+
+
+<!-- User Account  -->
+<div class="user-account">
+
+   <section>
+
+      <div id="close-account"><span>X</span></div>
+
+      <div class="user">
+         <p><span>Log In To Access Custom Features!</span></p>
+      </div>
+
+      <div class="display-orders">
+         <p>Margherita<span>(₹70/- x 1 )</span></p>
+         <p>Indi Chicken Tikka<span>(₹200/- x 2 )</span></p>
+         <p>Pepper Barbecue & Onion<span>( ₹150 /- x 1 )</span></p>
+         <p><span>Other..</span></p>
+      </div>
+
+      <div class="flex">
+
+         <form action="" method="post">
+            <h3>Login now</h3>
+            <input type="email" name="email" required class="box" placeholder="Enter your email" maxlength="50" autocomplete="off">
+            <input type="password" name="pass" required class="box" placeholder="Enter your password" maxlength="20" autocomplete="off">
+            <input type="submit" value="login now" name="login" class="btn">
+         </form>
+
+         <form action="" method="post">
+            <h3>Register now</h3>
+            <input type="text" name="name" class="box" placeholder="Enter your name" maxlength="20" required autocomplete="off">
+            <input type="email" name="email" class="box" placeholder="Enter your email" maxlength="50" required autocomplete="off">
+            <input type="password" name="pass" class="box" placeholder="Enter your password" maxlength="20" required>
+            <input type="password" name="cpass" class="box" placeholder="Confirm your password" maxlength="20" required>
+            <input type="submit" value="register now" name="register" class="btn">
+         </form>
+
+      </div>
+
+   </section>
+
+</div>
+<!-- User Account End -->
+
+
+
+
+<!-- My Orders Section -->
+<div class="my-orders">
+
+   <section>
+
+      <div id="close-orders"><span>X</span></div>
+
+      <h3 class="title"> my orders </h3>
+
+      <div class="box">
+         <p>Placed on : <span>06/04/2022</span> </p>
+         <p>Name : <span>Divyansh Gabra</span> </p>
+         <p>Number : <span>1234567890</span></p>
+         <p>Address : <span>Flat no. 2, Modern Colony, Delhi, India 110003</span></p>
+         <p>Payment method : <span>Cash on Delivery</span></p>
+         <p>Your orders : <span></span></p>
+         <p>Total price : <span>₹420</span></p>
+         <p>Payment status : <span style="color: var(--blue);">pending</span> </p>
+      </div>
+
+      <div class="box">
+         <p>Placed on : <span>06/04/2022</span> </p>
+         <p>Name : <span>Divyansh Gabra</span> </p>
+         <p>Number : <span>1234567890</span></p>
+         <p>Address : <span>Flat no. 2, Modern Colony, Delhi, India 110003</span></p>
+         <p>Payment method : <span>Cash on Delivery</span></p>
+         <p>Your orders : <span> Margherita ₹70/- x 2, Peppy Paneer ₹100/- x 1, Chicken Fiesta ₹250/- x 2, Deluxe Veggie ₹235/- x 1</span></p>
+         <p>Total price : <span>₹975/-</span></p>
+         <p>Payment status : <span style="color: var(--blue);">pending</span> </p>
+      </div>
+
+   </section>
+
+</div>
+<!-- My Orders Section End -->
+
+
+
+<!-- Shopping Cart Section -->
+<div class="shopping-cart">
+
+   <section>
+
+      <div id="close-cart"><span>X</span></div>
+
+      <div class="box">
+         <a href="#" class="fas fa-times"></a>
+         <img src="images/pizza-1.jpg" alt="">
+         <div class="content">
+            <p>Margherita</p>
+            <span>(₹70/- x 2) </span>
+            <form action="" method="post">
+               <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+               <button type="submit" class="fas fa-edit" name="update_qty"></button>
+            </form>
+         </div>
+      </div>
+
+      <div class="box">
+         <a href="#" class="fas fa-times"></a>
+         <img src="images/pizza-3.jpg" alt="">
+         <div class="content">
+            <p>Veg Extravaganza</p>
+            <span>(₹95/- x 1)</span>
+            <form action="" method="post">
+               <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+               <button type="submit" class="fas fa-edit" name="update_qty"></button>
+            </form>
+         </div>
+      </div>
+
+      <div class="box">
+         <a href="#" class="fas fa-times"></a>
+         <img src="images/pizza-6.jpg" alt="">
+         <div class="content">
+            <p>Keema Do Pyaaza</p>
+            <span>( ₹400/- x 2)</span>
+            <form action="" method="post">
+               <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+               <button type="submit" class="fas fa-edit" name="update_qty"></button>
+            </form>
+         </div>
+      </div>
+
+      <div class="box">
+         <a href="#" class="fas fa-times"></a>
+         <img src="images/pizza-7.jpg" alt="">
+         <div class="content">
+            <p>Farm House</p>
+            <span>(₹80/- x 1)</span>
+            <form action="" method="post">
+               <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+               <button type="submit" class="fas fa-edit" name="update_qty"></button>
+            </form>
+         </div>
+      </div>
+
+      <a href="#order" class="btn">order now</a>
+
+   </section>
+
+</div>
+
+
+
+<!-- Shopping Cart Section End -->
+
+<div class="home-bg">
+
+   <section class="home" id="home">
+
+      <div class="slide-container">
+
+         <div style="display: flex; gap: 100px;" class="slide active">
+            <div class="image">
+               <img src="images/home-img-1.png"  alt="">
+            </div>
+            <div class="content">
+               <h3>Welcome To The Kitchen!!</h3>
+               <p></p>
+            </div>
+         </div>
+
+         <!-- <div class="slide">
+            <div class="image">
+               <img src="images/home-img-2.png" alt="">
+            </div>
+            <div class="content">
+               <h3>Pizza With Mushrooms</h3>
+               <div class="fas fa-angle-left" onclick="prev()"></div>
+               <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+         </div>  -->
+
+         <!-- <div class="slide">
+            <div class="image">
+               <img src="images/home-img-3.png" alt="">
+            </div>
+            <div class="content">
+               <h3>Mascarpone And Mushrooms</h3>
+               <div class="fas fa-angle-left" onclick="prev()"></div>
+               <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+         </div> -->
+
+      </div>
+
+   </section>
+
+</div>
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+   <h1 class="heading">about us</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="images/about-1.png" width="300px" height="300px" alt="">
+         <h3>Made With Love</h3>
+         <p>Indulge in our pizzas, made with love and passion. Each handcrafted slice embodies our commitment to quality and flavor. From our heritage recipes to locally sourced ingredients, every bite is a taste of pure culinary delight. Experience the love in every mouthwatering moment.</p>
+         <a href="#menu" class="btn">our menu</a>
+      </div>
+
+      <div class="box">
+         <img src="images/about-2.png"   width="300px" height="300px"  alt="">
+         <h3>30 Minutes Delivery</h3>
+         <p>Hungry? Don't wait! We guarantee piping-hot pizzas delivered to your door within 30 minutes. Our speedy delivery service ensures you satisfy your cravings in no time. Enjoy the convenience and deliciousness without the long wait. Order now and get ready to dig in!</p>
+         <a href="#menu" class="btn">our menu</a>
+      </div>
+
+      <div class="box">
+         <img src="images/about-3.jpg" width="300px" height="300px" alt="">
+         <h3>Share With Friends</h3>
+         <p>Pizza is meant to be shared with friends! Treat your taste buds and create memories together. With our mouthwatering flavors and generous portions, our pizzas are perfect for gatherings and celebrations. Share the joy, laughter, and deliciousness with your friends today</p>
+         <a href="#menu" class="btn">our menu</a>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- menu section starts  -->
+
+<section id="menu" class="menu">
+
+   <h1 class="heading">our menu</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="price">₹<span>70</span>/-</div>
+         <img src="images/pizza-1.jpg" alt="">
+         <div class="name">Margherita</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">₹<span>80</span>/-</div>
+         <img src="images/pizza-2.jpg" alt="">
+         <div class="name">Farm House</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">₹<span>200</span>/-</div>
+         <img src="images/pizza-3.jpg" alt="">
+         <div class="name">Peppy Paneer</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">₹<span>250</span>/-</div>
+         <img src="images/pizza-4.jpg" alt="">
+         <div class="name">Pepper Barbecue & Onion</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">₹<span>250</span>/-</div>
+         <img src="images/pizza-5.jpg" alt="">
+         <div class="name">Chicken Fiesta</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">₹<span>210</span>/-</div>
+         <img src="images/pizza-6.jpg" alt="">
+         <div class="name">Indi Chicken Tikka</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">₹<span>400</span>/-</div>
+         <img src="images/pizza-7.jpg" alt="">
+         <div class="name">Keema Do Pyaaza</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">₹<span>235</span>/-</div>
+         <img src="images/pizza-8.jpg" alt="">
+         <div class="name">Deluxe Veggie</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">₹<span>95</span>/-</div>
+         <img src="images/pizza-9.jpg" alt="">
+         <div class="name">Veg Extravaganza</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- menu section ends -->
+
+<!-- order section starts  -->
+
+<section class="order" id="order">
+
+   <h1 class="heading">order now</h1>
+
+   <form action="" method="post">
+
+      <div class="display-orders">
+         <p>Margherita<span>( ₹75/- x 2 )</span></p>
+         <p>Peppy Paneer<span>( ₹200/- x 1 )</span></p>
+         <p>Veg Extravaganza<span>( ₹100/- x 4 )</span></p>
+         <p>Pepper barbecue & onion<span>( ₹250/- x 1 )</span></p>
+      </div>
+
+      <div class="flex">
+         <div class="inputBox">
+            <span>Your name :</span>
+            <input type="text" name="name" class="box" required placeholder="Enter your name" maxlength="20">
+         </div>
+         <div class="inputBox">
+            <span>Your number :</span>
+            <input type="number" name="number" class="box" required placeholder="Enter your number" min="0">
+         </div>
+         <div class="inputBox">
+            <span>Payment method</span>
+            <select name="method" class="box">
+               <option value="cash on delivery">Cash on delivery</option>
+               <option value="credit card">Credit card</option>
+               <option value="paytm">Paytm</option>
+               <option value="paypal">Paypal</option>
+            </select>
+         </div>
+         <div class="inputBox">
+            <span>Address Line 01 :</span>
+            <input type="text" name="flat" class="box" required placeholder="e.g. Flat no." maxlength="50">
+         </div>
+         <div class="inputBox">
+            <span>Address Line 02 :</span>
+            <input type="text" name="street" class="box" required placeholder="e.g. Street name." maxlength="50">
+         </div>
+         <div class="inputBox">
+            <span>Pin Code :</span>
+            <input type="number" name="pin_code" class="box" required placeholder="e.g. 123456" min="0">
+         </div>
+      </div>
+
+      <input type="submit" value="order now" class="btn" name="order">
+
+   </form>
+
+</section>
+
+<!-- order section ends -->
+
+<!-- faq section starts  -->
+
+<section class="faq" id="faq">
+
+   <h1 class="heading">FAQ</h1>
+
+   <div class="accordion-container">
+
+      <div class="accordion active">
+         <div class="accordion-heading">
+            <span>How is it made?</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            Our pizzas are expertly crafted with precision and care. We start with hand-kneaded dough, top it with the finest ingredients, and bake it to perfection in our state-of-the-art ovens. Every step is meticulously executed to deliver a mouthwatering pizza experience.
+         </p>
+      </div>
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <span>How long does it take for delivery?</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            Our swift delivery service ensures your hot, delicious pizzas reach your doorstep in record time. Sit back, relax, and expect your order within 30 minutes or less. Quick, convenient, and satisfying!
+         </p>
+      </div>
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <span>Can I order for huge parties?</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            Planning a big party? We've got you covered! Our pizza catering service is perfect for large gatherings. From birthdays to corporate events, our delicious pizzas will satisfy everyone's cravings. Order now and let us make your party a tasty success!
+         </p>
+      </div>
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <span>Is it cooked with oil?</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            No, our pizzas are not cooked with oil. We use a carefully selected blend of quality ingredients and bake our pizzas to perfection in our ovens, ensuring a deliciously crispy crust without the need for additional oil. Enjoy the natural flavors!
+         </p>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- faq section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+   <div class="box-container">
+
+      <div class="box">
+         <i class="fas fa-phone"></i>
+         <h3>phone number</h3>
+         <p>+91 - 9373088830</p>
+         <p>+91 - 7892872983</p>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-map-marker-alt"></i>
+         <h3>our address</h3>
+         <p>123, ABC Lane, Green Park, New Delhi, India - 110003</p>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-clock"></i>
+         <h3>opening hours</h3>
+         <p>09:00am to 10:00pm</p>
+         <p>Closed On Saturday</p>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-envelope"></i>
+         <h3>email address</h3>
+         <p>crispkitchen@gmail.com</p>
+         <p>kitchencontact@gmail.com</p>
+      </div>
+
+   </div>
+
+   <div class="credit">
+      &copy; Copyright @ 2023 by <span>Divyansh Gabra</span> | All rights reserved!
+   </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+
+<script src="https://kit.fontawesome.com/40531513c2.js" crossorigin="anonymous"></script>
+</body>
+</html>
